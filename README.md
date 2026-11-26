@@ -17,7 +17,7 @@ Karing puts both sides in one place: a verified directory of stroke-care profess
 
 ## Research
 
-We interviewed 36 family members of stroke patients, reached through the stroke departments of four Hanoi hospitals (Bach Mai Hospital, Hanoi Medical University Hospital, 103 Hospital and Central Acupuncture Hospital), and 24 nurses and technicians who care for stroke patients.
+We worked with 5 healthcare institutions, including the stroke departments of Bach Mai Hospital, Hanoi Medical University Hospital, 103 Hospital and Central Acupuncture Hospital. Through them we interviewed 36 family members of stroke patients, and we also interviewed 24 nurses and technicians who care for stroke patients.
 
 | What we heard | How it shaped Karing |
 |---|---|
@@ -44,7 +44,7 @@ We interviewed 36 family members of stroke patients, reached through the stroke 
 
 ## My role
 
-I led the project as team leader and CTO of a 7-member team, while I was a grade-11 computer science student at Hanoi-Amsterdam High School. I turned the field research into requirements and design decisions, and wrote most of the front-end code (HTML, CSS and JavaScript on Firebase).
+I founded Karing as a grade-11 computer science student at Hanoi-Amsterdam High School and led it as CTO of a 7-member team. I ran the field research, turned it into requirements and design decisions, and wrote most of the front-end code (HTML, CSS and JavaScript on Firebase).
 
 The code was first built in a separate team repository and later moved into this one from a teammate's account, so the commit history here does not show who wrote what.
 
@@ -168,10 +168,10 @@ npx firebase-tools deploy --only database --project karing-a8b53
 
 ## Team and credits
 
-Built in 2023 by a 7-member team in Hanoi, led by Bui Duc Khoi. In 2023, ownership was transferred to Ô Xanh Internet Technology JSC for continued development.
+Founded by Bui Duc Khoi and built in 2023 by a 7-member team in Hanoi. In 2023, ownership was transferred to Ô Xanh Internet Technology JSC for continued development.
 
 ## Tóm tắt tiếng Việt
 
-**Karing** là nền tảng web kết nối gia đình có người bệnh đột quỵ với người chăm sóc tại nhà có chuyên môn. Dự án do Bùi Đức Khôi làm trưởng nhóm khi đang học lớp 11 chuyên Tin, Trường THPT Chuyên Hà Nội - Amsterdam, cùng nhóm 7 thành viên, dựa trên phỏng vấn 36 người nhà bệnh nhân (qua khoa đột quỵ của 4 bệnh viện tại Hà Nội) và 24 người có chuyên môn chăm sóc. Karing ra mắt với cơ sở dữ liệu ban đầu gồm 28 người chăm sóc đã được xác minh, đã kết nối hơn 60 gia đình, đạt giải Ba cuộc thi SV.Startup V toàn quốc và được Công ty Cổ phần Công nghệ Internet Ô Xanh cam kết đầu tư, tiếp nhận phát triển.
+**Karing** là nền tảng web kết nối gia đình có người bệnh đột quỵ với người chăm sóc tại nhà có chuyên môn. Dự án do Bùi Đức Khôi sáng lập và dẫn dắt khi đang học lớp 11 chuyên Tin, Trường THPT Chuyên Hà Nội - Amsterdam, cùng nhóm 7 thành viên, dựa trên nghiên cứu cùng 5 cơ sở y tế, phỏng vấn 36 người nhà bệnh nhân và 24 người có chuyên môn chăm sóc. Karing ra mắt với cơ sở dữ liệu ban đầu gồm 28 người chăm sóc đã được xác minh, đã kết nối hơn 60 gia đình, đạt giải Ba cuộc thi SV.Startup V toàn quốc và được Công ty Cổ phần Công nghệ Internet Ô Xanh cam kết đầu tư, tiếp nhận phát triển.
 
 Năm 2026, mã nguồn được viết lại phần kỹ thuật nhưng giữ nguyên giao diện: tách mã theo từng trang, chống chèn mã độc (XSS) từ cơ sở dữ liệu, thêm quy tắc bảo mật cho dữ liệu bệnh nhân, sửa lỗi điều hướng và đăng nhập, giảm dung lượng ảnh từ 2,7 MB xuống khoảng 360 KB, và thêm kiểm thử tự động chạy trên GitHub Actions. Mã gốc năm 2023 được giữ tại tag `v1-2023`.

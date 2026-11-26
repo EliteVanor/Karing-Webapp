@@ -1,0 +1,14 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "aricles": {
+      ".read": true
+    },
+    "db": {
+      "pt": {
+        ".read": "auth != null"
+      }
+    }
+  }
+}

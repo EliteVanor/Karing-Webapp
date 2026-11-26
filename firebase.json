@@ -1,10 +1,20 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      { "source": "/pt.html", "destination": "/patient-detail.html", "type": 301 },
+      { "source": "/contact.html", "destination": "/index.html", "type": 301 },
+      { "source": "/login.html", "destination": "/signin.html", "type": 301 }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(webp|png|svg)",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+      }
     ]
+  },
+  "database": {
+    "rules": "database.rules.json"
   }
 }

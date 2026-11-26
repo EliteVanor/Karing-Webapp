@@ -1,0 +1,134 @@
+/* News list and detail pages (news.html, article.html, patient-detail.html). */
+
+header {
+    background: linear-gradient(180deg, #5C6DFF 0%, #5061FF 49.48%, #000E89 100%);
+    height: 13vh;
+    width: 100%;
+}
+
+.ups {
+    margin-top: 40px;
+    margin-left: 70px;
+    display: flex;
+    gap: 30px;
+}
+
+.ups form {
+    position: relative;
+}
+
+.ups form input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    padding: 8px 32px;
+    width: 430%;
+    color: var(--dark-color);
+}
+
+.ups form .submit-btn {
+    position: absolute;
+    width: 140px;
+    margin-left: 1080px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--dark-blue-color);
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.ups h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 54px;
+    margin: 0;
+    color: var(--blue-color);
+}
+
+.ups h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    color: #000000;
+}
+
+.news .articles {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.news .article {
+    display: flex;
+    width: 1600px;
+    background: #F3F3FD;
+    box-shadow: 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.2);
+    border-radius: 20px;
+    margin-top: 24px;
+}
+
+.news .article .inf {
+    margin-left: 20px;
+    width: 1200px;
+}
+
+.news .article .inf a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.news .article .inf p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: -20px;
+    color: #464646;
+}
+
+.news .article img {
+    height: 250px;
+    width: 400px;
+}
+
+/* Article and patient detail pages (filled by js/pages/article.js and patient-detail.js). */
+
+.detail {
+    padding: 40px 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.detail img {
+    max-width: min(600px, 100%);
+    border-radius: 12px;
+}
+
+.detail-meta {
+    color: #666;
+}
+
+.detail-body {
+    line-height: 1.7;
+    white-space: pre-line;
+}
+
+.detail .detail-photo {
+    max-width: 300px;
+}

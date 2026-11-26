@@ -1,170 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <title>Karing | Kết nối người nhà bệnh nhân đột quỵ và người chăm sóc</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
+    <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;800&display=swap"
         rel="stylesheet"
     >
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script type="module" src="js/layout.js"></script>
 </head>
 
 <body>
 
     <header>
         <div class="wrapper">
-            <nav>
-                <a href="index.html"><div class="logo">Karing</div></a>
-                
-                <ul>
-                    <li>
-                        <a href="index.html" class="orange">Trang Chủ</a>
-                    </li>
-                    
-                    <li>
-                        <a href="patient.html">Tìm Bệnh Nhân</a>
-                    </li>
-
-                    <li>
-                        <a href="care.html">Tìm Người Chăm Sóc</a>
-                    </li>
-
-                    <li>
-                        <a href="news.html">Tin Tức</a>
-                    </li>
-
-                    <li>
-                        <button onclick="document.getElementById('id02').style.display='block'"class="btn none">Liên Hệ</button>
-
-                        <div id="id02" class="modal ver22">
-                            
-                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                            <form class="modal-content ver2 animate" action="#"> 
-                                <div class="popup2">
-                                    <h1>Liên hệ chúng tôi</h1>
-                                    <div class="regis">
-                                        <ul>
-                                            <li>
-                                                <img src="image/Email.svg" alt="">
-                                                chamsoc@nguoibenh.com.vn
-                                            </li>
-                                            
-                                            <li>
-                                                <img src="image/Phone.svg" alt="">
-                                                0983471417
-                                            </li>
-                        
-                                            <li>
-                                                <img src="image/locate.svg" alt="">
-                                                208 Giải Phóng, Hai Bà Trưng, Hà Nội
-                                            </li>
-                                        </ul>
-
-                                        <div class="social">
-                                            <a href="#"><img src="image/facebook.png" alt=""></a>
-                                            <a href="#"><img src="image/Twitter.png" alt=""></a>
-                                            <a href="#"><img src="image/Instagram.png" alt=""></a>
-                                        </div>
-                                    </div>
-                                    
-                                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Hủy</button>
-                                </div>
-                            </form>
-                        </div>
-                    </li>
-
-                    <li>
-                        <button onclick="document.getElementById('id01').style.display='block'" class="btn dark">Đăng nhập</button>
-
-                        <div id="id01" class="modal">
-                            
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                            <form class="modal-content animate" action="#"> 
-                                <div class="popup">
-                                    <h1>Đăng Nhập</h1>
-                                    <div class="container">
-                                        <div class="type">
-                                            <div class="gmail">
-                                                <input type="text" placeholder="Nhập gmail" required>
-                                            </div>
-                                            <div class="psw">
-                                                <input type="password" placeholder="Nhập mật khẩu" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="l3">
-                                            <a href="#"><span>Quên mật khẩu?</span></a>
-
-                                            <label>
-                                                <input type="checkbox" checked="checked" name="remember"> Ghi nhớ tôi
-                                            </label>
-                                        </div>
-
-                                        <div class="login">
-                                            <button type="submit">Đăng nhập</button>
-                                        </div>
-                                    </div>
-                                
-                                    <h4>Chưa có tài khoản?</h4>
-                                    <div class="regis">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><p>Đăng ký người nhà bệnh nhân</p></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><p>Đăng ký người chăm sóc</p></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    
-                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Hủy</button>
-                                </div>
-                            </form>
-                        </div>
-                    </li>
-                    <script>
-                        var modal = document.getElementById('id01');
-                        var modal2 = document.getElementById('id02');
-
-                        window.onclick = function(event) {
-                            if (event.target == modal) {
-                                modal.style.display = "none";
-                            }
-                            if (event.target == modal2) {
-                                modal2.style.display = "none";
-                            }
-                        }
-                    </script>
-                </ul>
-                <!-- <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                    <li class="nav-item" target="nav-item" class="orange">
-                        <a  href="index.html" aria-current="page">Trang chủ</a><span
-                    </li>
-                    <li class="nav-item" target="nav-item">
-                        <a  href="patient.html">Tìm bệnh nhân</a>
-                    </li>
-                    <li class="nav-item" target="nav-item">
-                        <a  href="care.html">Tìm người chăm sóc</a>
-                    </li>
-                    <li class="nav-item" target="nav-item">
-                        <a " href="news.html">Tin tức</a>
-                    </li>
-                    <li class="nav-item" target="nav-item">
-                        <a  href="contact.html">Liên hệ</a>
-                    </li>
-                    <li class="btn dark">
-                        <a  href="login.html" id="login">Đăng nhập</a>
-                    </li>
-                </ul> -->
-            </nav>
-            
-            <!-- End of desktop navigation menu -->
+            <nav id="site-nav" data-active="home"></nav>
 
             <div class="hero-section">
                 <div class="left">
@@ -182,17 +38,11 @@
                 </div>
 
                 <div class="right">
-                    <img src="image/pic1.png" alt="">
+                    <img src="images/pic1.webp" alt="">
                 </div>
 
                 <div class="achievement-cards">
                     <div class="achievement-card ng-ketnoi">
-                        <!-- <div class="content">
-                            <div>
-                                <h3>20 người</h3>
-                            </div>
-                            <p>Kết nối thành công</p>
-                        </div> -->
 
                         <div class="bg"></div>
                     </div>
@@ -201,18 +51,16 @@
         </div>
     </header>
 
-    <!-- End of header section -->
-
     <div class="wrapper">
         <section class="testimonials-section">
             <div class="up">
-                <img src="image/Heart Rate.svg" alt="">
+                <img src="images/heart-rate.svg" alt="">
                 <h1>Tính năng phần mềm</h1>
             </div>
 
             <div class="down">
                 <div class="testimonial-card">
-                    <img src="image/icon1.png" alt="">
+                    <img src="images/icon1.png" alt="">
 
                     <div class="content">
                         <h3>Thông tin</h3>
@@ -229,8 +77,8 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <img src="image/icon2.png" alt="">
-                    
+                    <img src="images/icon2.png" alt="">
+
                     <div class="content">
                         <h3>Tìm kiếm</h3>
                     </div>
@@ -246,8 +94,8 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <img src="image/icon3.png" alt="">
-                    
+                    <img src="images/icon3.png" alt="">
+
                     <div class="content">
                         <h3>Theo dõi sức khỏe</h3>
                     </div>
@@ -264,15 +112,13 @@
         </section>
     </div>
 
-    <!-- End of testimonials section -->
-    
     <section class="news">
         <div class="wrapper">
             <div class="ups">
                 <h1 class="blue">Tin Tức</h1>
                 <a href="news.html"><h2>Tất cả...</h2></a>
             </div>
-            
+
             <div class="articles">
                 <div class="article">
                     <div class="inf">
@@ -285,7 +131,7 @@
                         </div>
                     </div>
 
-                    <img src="image/article1.png" alt="">
+                    <img src="images/article1.png" alt="">
                 </div>
 
                 <div class="article">
@@ -299,7 +145,7 @@
                         </div>
                     </div>
 
-                    <img src="image/article2.png" alt="">
+                    <img src="images/article2.png" alt="">
                 </div>
 
                 <div class="article">
@@ -313,14 +159,12 @@
                         </div>
                     </div>
 
-                    <img src="image/article3.png" alt="">
+                    <img src="images/article3.png" alt="">
                 </div>
             </div>
-            
+
         </div>
     </section>
-    
-    <!-- End of news section -->
 
     <section class="patient-section">
         <div class="wrapper">
@@ -331,7 +175,7 @@
 
             <div class="patients">
                 <div class="patient">
-                    <img src="image/patient1.png" alt="">
+                    <img src="images/patient1.webp" alt="">
 
                     <div class="name">
                         <a href="#"><h3>Cụ Trần Thị Bách</h3></a>
@@ -342,7 +186,7 @@
                 </div>
 
                 <div class="patient">
-                    <img src="image/patient2.png" alt="">
+                    <img src="images/patient2.webp" alt="">
 
                     <div class="name">
                         <a href="#"><h3>Bà Phương Mai</h3></a>
@@ -353,7 +197,7 @@
                 </div>
 
                 <div class="patient">
-                    <img src="image/patient3.png" alt="">
+                    <img src="images/patient3.webp" alt="">
 
                     <div class="name">
                         <a href="#"><h3>Bà Lê Trang</h3></a>
@@ -364,7 +208,7 @@
                 </div>
 
                 <div class="patient">
-                    <img src="image/patient4.png" alt="">
+                    <img src="images/patient4.webp" alt="">
 
                     <div class="name">
                         <a href="#"><h3>Ông Hiếu</h3></a>
@@ -375,7 +219,7 @@
                 </div>
 
                 <div class="patient">
-                    <img src="image/patient5.png" alt="">
+                    <img src="images/patient5.webp" alt="">
 
                     <div class="name">
                         <a href="#"><h3>Ông Lê Duy</h3></a>
@@ -388,8 +232,6 @@
         </div>
     </section>
 
-    <!-- End of patient section -->
-
     <section class="care-section">
         <div class="wrapper">
             <div class="ups">
@@ -399,7 +241,7 @@
 
             <div class="cares">
                 <div class="care">
-                    <img src="image/care1.png" alt="">
+                    <img src="images/care1.webp" alt="">
 
                     <div class="name">
                         <a href="#"><h3>Lê Quý Thọ</h3></a>
@@ -410,7 +252,7 @@
                 </div>
 
                 <div class="care">
-                    <img src="image/care2.png" alt="">
+                    <img src="images/care2.webp" alt="">
 
                     <div class="name">
                         <a href="#"><h3>Trần Văn Đức</h3></a>
@@ -421,7 +263,7 @@
                 </div>
 
                 <div class="care">
-                    <img src="image/care3.png" alt="">
+                    <img src="images/care3.webp" alt="">
 
                     <div class="name">
                         <a href="#"><h3>Lê Thu Hà</h3></a>
@@ -432,7 +274,7 @@
                 </div>
 
                 <div class="care">
-                    <img src="image/care4.png" alt="">
+                    <img src="images/care4.webp" alt="">
 
                     <div class="name">
                         <a href="#"><h3>Lê Thị Nhung</h3></a>
@@ -443,7 +285,7 @@
                 </div>
 
                 <div class="care">
-                    <img src="image/care5.png" alt="">
+                    <img src="images/care5.webp" alt="">
 
                     <div class="name">
                         <a href="#"><h3>Tuấn Hải</h3></a>
@@ -456,86 +298,7 @@
         </div>
     </section>
 
-    <!-- End of care section -->
+    <footer id="site-footer"></footer>
 
-    <footer>
-        <div class="wrapper">
-            <div class="links-container">
-                <div class="links">
-                    <h3>Về chúng tôi</h3>
-    
-                    <ul>
-                        <li>
-                            <a href="#">Thông tin</a>
-                        </li>
-                        
-                        <li>
-                            <a href="#">Chính sách bảo mật</a>
-                        </li>
-    
-                        <li>
-                            <a href="#">Điều khoản sử dụng</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="links">
-                    <h3>Trợ giúp</h3>
-    
-                    <ul>
-                        <li>
-                            <a href="#">Đăng nhập</a>
-                        </li>
-                        
-                        <li>
-                            <a href="#">Tạo hồ sơ</a>
-                        </li>
-    
-                        <li>
-                            <a href="#">Kết nối</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="links">
-                    <h3>Liên hệ chúng tôi</h3>
-    
-                    <ul>
-                        <li>
-                            <img src="image/Email.svg" alt="">
-                            chamsoc@nguoibenh.com.vn
-                        </li>
-                        
-                        <li>
-                            <img src="image/Phone.svg" alt="">
-                            0983471417
-                        </li>
-    
-                        <li>
-                            <img src="image/locate.svg" alt="">
-                            208 Giải Phóng, Hai Bà Trưng, Hà Nội
-                        </li>
-                    </ul>
-
-                    <div class="social">
-                        <a href="#"><img src="image/facebook.png" alt=""></a>
-                        <a href="#"><img src="image/Twitter.png" alt=""></a>
-                        <a href="#"><img src="image/Instagram.png" alt=""></a>
-                    </div>
-
-                    <form action="#">
-                        <input type="text" placeholder="Email Address">
-                        <button class="submit-btn">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-
-            <p class="copyright">Bản quyền thuộc về nhóm tác giả Karing © 2023</p>
-        </div>
-    </footer>
-
-    <!-- End of page -->
-    
-    <script src="scroll.js"></script>
-</body>
+    </body>
 </html>

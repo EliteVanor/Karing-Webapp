@@ -1,0 +1,168 @@
+/* Patient and caregiver listings (patient.html, care.html). */
+
+header {
+    background: linear-gradient(180deg, #5C6DFF 0%, #5061FF 49.48%, #000E89 100%);
+    height: 13vh;
+    width: 100%;
+}
+
+.search-panel {
+    display: flex;
+    gap: 80px;
+}
+
+.filter {
+    width: 600px;
+    height: 700px;
+    background: #F3F3FD;
+    box-shadow: 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.2);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-left: 10px;
+}
+
+.filter h2.blue {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #4977F8;
+}
+
+.filter h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000000;
+}
+
+.filter li {
+    gap: 10px;
+    display: flex;
+}
+
+.filter form {
+    margin-top: 15px;
+    position: relative;
+}
+
+.filter form input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+    width: 90.1%;
+    color: var(--dark-color);
+}
+
+.profile-card {
+    display: flex;
+    width: 1250px;
+    background: #F3F3FD;
+    box-shadow: 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.2);
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+.profile-card h5.dark {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    color: #000000;
+}
+
+.profile-card a {
+    text-decoration: none;
+}
+
+.profile-card h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #4977F8;
+}
+
+.profile-card h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    color: #000000;
+}
+
+.profile-card .info {
+    margin-left: 50px;
+}
+
+.profile-card .p-img {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.profile-card .ttll {
+    margin-top: -20px;
+    gap: 90px;
+    display: flex;
+}
+
+.profile-card .ttll .locate {
+    gap: 5px;
+    display: flex;
+}
+
+.profile-card .ttll .phone-num {
+    gap: 5px;
+    display: flex;
+}
+
+.profile-card .line3 {
+    margin-top: -30px;
+    gap: 30px;
+    display: flex;
+}
+
+.profile-card .line3 .age {
+    gap: 5px;
+    display: flex;
+}
+
+.profile-card .line3 .gender {
+    gap: 5px;
+    display: flex;
+}
+
+.profile-card .line3 .paid {
+    gap: 5px;
+    display: flex;
+}
+
+.profile-card .exp,
+.profile-card .feedback,
+.profile-card .require,
+.profile-card .benh {
+    margin-top: -30px;
+    gap: 5px;
+    display: flex;
+}
+
+.profile-card .exp h5.dark {
+    width: 150px;
+}
+
+.profile-card .require h5.dark {
+    width: 115px;
+}
+
+/* The age/gender row is pulled up over the name by a negative margin, which
+   used to swallow clicks on the profile link. Keep the link on top. */
+.profile-card .info > a {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,56 @@
+/* Sign-in, sign-up and 404 pages: one centered card under the nav. */
+
+header {
+    background: linear-gradient(180deg, #5C6DFF 0%, #5061FF 49.48%, #000E89 100%);
+    height: 13vh;
+    width: 100%;
+}
+
+.auth-page {
+    min-height: 60vh;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.auth-card {
+    width: min(420px, 100%);
+    padding: 32px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.auth-card[hidden] {
+    display: none;
+}
+
+.auth-card label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 700;
+}
+
+.auth-card input {
+    padding: 12px;
+    border: 1px solid #ccd;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.auth-card .btn {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form-message {
+    min-height: 1.2em;
+    color: #c0392b;
+}

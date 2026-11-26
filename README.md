@@ -31,7 +31,9 @@ Karing puts both sides in one place. Families post a patient profile. Caregivers
 
 ## My role
 
-I was the CTO of a 7-member student team. I led the team, turned the field research into requirements and the page structure, chose the Firebase architecture (Hosting, Realtime Database, Authentication), and did the final integration of the pages before launch. Teammates wrote most of the 2023 page markup and styles, which is why the commit history has several authors.
+I was the CTO of a 7-member student team. I led the team, turned the field research into requirements and design decisions, and wrote most of the front-end code.
+
+The code was first built in a separate team repository and later moved into this one from a teammate's account, so the commit history here does not show who wrote what.
 
 In 2026 I came back to the code on my own and revised it. That work is described [below](#2026-revision-what-i-changed-and-why).
 

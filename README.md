@@ -9,9 +9,23 @@
 
 ## The problem
 
-Many stroke patients in Vietnam recover at home, with their families as caregivers. Those families need help from people with stroke-care skills, but had no simple way to find them. Qualified caregivers had no simple way to reach those families either.
+Vietnam has about 200,000 new stroke cases a year (World Stroke Organization figures for 2022). Hospital capacity is limited and hospital stays are expensive, so many patients go home before they have recovered. Their families then become the caregivers, usually without the skills or the time that early stroke care needs.
 
-Karing puts both sides in one place. Families post a patient profile. Caregivers post their experience and rate. Both can read practical information about stroke.
+Families can hire nurses and therapists who specialize in stroke care, but in 2022 there was no marketplace for this service in Vietnam. Families and caregivers found each other by word of mouth, so families had few options and little information to judge a caregiver. Caregivers, in turn, had no reliable way to reach the families who needed them.
+
+Karing puts both sides in one place: a verified directory of stroke-care professionals, patient profiles that tell caregivers what is needed, and practical information about stroke for families.
+
+## Research
+
+We interviewed 36 family members of stroke patients, reached through the stroke departments of four Hanoi hospitals (Bach Mai Hospital, Hanoi Medical University Hospital, 103 Hospital and Central Acupuncture Hospital), and 24 nurses and technicians who care for stroke patients.
+
+| What we heard | How it shaped Karing |
+|---|---|
+| Both sides found each other only by word of mouth | A searchable directory of caregivers and of patients who need care |
+| Families named 11 things they need to know before hiring: name, sex, age, hometown, phone, qualifications, experience, working hours, rate, personality, and reviews from earlier families | These became the fields of a caregiver profile |
+| Caregivers need to know the patient's condition, the address, the family's budget and the schedule | These became the fields of a patient profile |
+| Every caregiver was willing to share their details, but some did not want them public while the platform was in beta | Caregiver details are checked by an admin before they are published, and (since 2026) patient data is visible only to signed-in users |
+| We asked both sides how much they would pay to keep the platform running | A planned fee of 100,000 VND per successful connection, split between the family and the caregiver |
 
 ## What we built (2023)
 
@@ -20,18 +34,17 @@ Karing puts both sides in one place. Families post a patient profile. Caregivers
 - **News and articles** about stroke care, served from the database.
 - **Accounts** with email and password sign-up and sign-in.
 
-**Research behind it:** we interviewed 36 families, 24 caregivers and 5 healthcare institutions, and turned what we heard into the requirements and the site map.
-
 **Results**
 
+- Launched with a starting database of 28 verified stroke-care professionals.
 - Connected 60+ stroke patient families with caregivers.
 - 3rd place, SV.Startup V Vietnam National Competition.
 - Paper: Bui, D. K. (2023). *A Web-Based Solution to Caring for Stroke Patients at Home in Vietnam.* 17th NEU-KKU International Conference on Socio-Economic and Environmental Issues in Development.
-- Project ownership transferred to O Xanh Internet Technology Company for continued development.
+- In March 2023, Ô Xanh Internet Technology JSC committed in writing to invest in the project and run it as part of the company. Ownership was transferred to them for continued development.
 
 ## My role
 
-I was the CTO of a 7-member student team. I led the team, turned the field research into requirements and design decisions, and wrote most of the front-end code.
+I led the project as team leader and CTO of a 7-member team, while I was a grade-11 computer science student at Hanoi-Amsterdam High School. I turned the field research into requirements and design decisions, and wrote most of the front-end code (HTML, CSS and JavaScript on Firebase).
 
 The code was first built in a separate team repository and later moved into this one from a teammate's account, so the commit history here does not show who wrote what.
 
@@ -155,10 +168,10 @@ npx firebase-tools deploy --only database --project karing-a8b53
 
 ## Team and credits
 
-Built in 2023 by a 7-member student team in Hanoi. In 2023, ownership was transferred to O Xanh Internet Technology Company for continued development.
+Built in 2023 by a 7-member team in Hanoi, led by Bui Duc Khoi. In 2023, ownership was transferred to Ô Xanh Internet Technology JSC for continued development.
 
 ## Tóm tắt tiếng Việt
 
-**Karing** là nền tảng web kết nối gia đình có người bệnh đột quỵ với người chăm sóc tại nhà có chuyên môn. Dự án được nhóm 7 sinh viên xây dựng năm 2023, dựa trên khảo sát 36 gia đình, 24 người chăm sóc và 5 cơ sở y tế. Karing đã kết nối hơn 60 gia đình, đạt giải Ba cuộc thi SV.Startup V toàn quốc và được chuyển giao cho Công ty Công nghệ Internet O Xanh.
+**Karing** là nền tảng web kết nối gia đình có người bệnh đột quỵ với người chăm sóc tại nhà có chuyên môn. Dự án do Bùi Đức Khôi làm trưởng nhóm khi đang học lớp 11 chuyên Tin, Trường THPT Chuyên Hà Nội - Amsterdam, cùng nhóm 7 thành viên, dựa trên phỏng vấn 36 người nhà bệnh nhân (qua khoa đột quỵ của 4 bệnh viện tại Hà Nội) và 24 người có chuyên môn chăm sóc. Karing ra mắt với cơ sở dữ liệu ban đầu gồm 28 người chăm sóc đã được xác minh, đã kết nối hơn 60 gia đình, đạt giải Ba cuộc thi SV.Startup V toàn quốc và được Công ty Cổ phần Công nghệ Internet Ô Xanh cam kết đầu tư, tiếp nhận phát triển.
 
 Năm 2026, mã nguồn được viết lại phần kỹ thuật nhưng giữ nguyên giao diện: tách mã theo từng trang, chống chèn mã độc (XSS) từ cơ sở dữ liệu, thêm quy tắc bảo mật cho dữ liệu bệnh nhân, sửa lỗi điều hướng và đăng nhập, giảm dung lượng ảnh từ 2,7 MB xuống khoảng 360 KB, và thêm kiểm thử tự động chạy trên GitHub Actions. Mã gốc năm 2023 được giữ tại tag `v1-2023`.
